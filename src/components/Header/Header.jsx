@@ -1,10 +1,7 @@
-import { useState } from "react";
 import { Tabs } from "./Tabs";
 import { ContactButton } from "./ContactButton";
 
-export const Header = () => {
-  const [activeTab, setActiveTab] = useState("_hello");
-
+export const Header = ({ activeTab, setActiveTab }) => {
   return (
     <header className="border-y-1 border-gray-700 flex items-center justify-between px-5">
       <div className="flex items-center">
